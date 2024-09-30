@@ -1,0 +1,116 @@
+
+
+#light{
+    fill: rgb(177, 207, 216);
+    animation: moveT 30s infinite; 
+    animation-delay: 3.2s; 
+    animation-timing-function: ease-in;
+  
+}
+#mid{
+    fill: rgb(81, 124, 160);
+    animation: moveT 30s infinite; 
+    animation-delay: 3.2s; 
+    animation-timing-function: ease-in;
+}
+#dark{
+    fill: darkblue;
+    animation: moveT 30s infinite; 
+    animation-delay: 3s; 
+    animation-timing-function: ease-in;
+}
+
+@keyframes moveT{
+    25%{
+        transform: translateX(100%);
+        
+    }
+    50%{ 
+        transform: translateX(0%);
+    }
+    75%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+#tec{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 30s infinite; 
+    animation-delay: 3s; 
+}
+#mex{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw2 30s infinite; 
+    animation-delay: 3.5s; 
+}
+
+
+@keyframes draw{
+    0%{
+        
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    8%{
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    20%{
+        fill:#6778A3;
+        stroke-dashoffset: 0;
+    }
+    50%{
+        fill:#6778A3;
+        stroke-dashoffset: 0;
+    }
+    75%{
+        fill:#6778A3;
+        stroke-dashoffset: 0;
+    }
+    95%{
+        fill:#6778A3;
+        stroke-dashoffset: 0;
+    }
+    100%{
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes draw2{
+    
+    0%{
+        
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    10%{
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    20%{
+        fill:#5B9B47;
+        stroke-dashoffset: 0;
+    }
+    50%{
+        fill:#5B9B47;
+        stroke-dashoffset: 0;
+    }
+    75%{
+        fill:#5B9B47;
+        stroke-dashoffset: 0;
+    }
+    95%{
+        fill:#5B9B47;
+        stroke-dashoffset: 0;
+    }
+    100%{
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+}
